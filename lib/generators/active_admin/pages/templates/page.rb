@@ -1,8 +1,4 @@
-require "pry"
-
 ActiveAdmin.register ActiveAdmin::Pages::Page, as: "Page" do
-#  menu :label => "Pages"
-
   sortable tree: true,
            max_levels: 0 # set to limit the page nesting
   config.paginate = false       # FIXME
