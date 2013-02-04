@@ -1,2 +1,1 @@
-module ActiveadminPages
-end
+require "active_admin/pages/engine"
