@@ -30,6 +30,7 @@ ActiveAdmin.register ActiveAdmin::Pages::Page, as: "Page" do
         t.seo_meta_inputs basic_metas: true, slug: true
       end
       f.input :published
+      f.input :layout
     end
     f.actions
   end
