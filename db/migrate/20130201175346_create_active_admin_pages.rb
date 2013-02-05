@@ -13,6 +13,8 @@ class CreateActiveAdminPages < ActiveRecord::Migration
     create_table :active_admin_pages do |t|
       t.string :title
       t.boolean :published
+      t.string :layout
+
       t.string :ancestry
       t.integer :position
 

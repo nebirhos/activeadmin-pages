@@ -1,5 +1,5 @@
 module ActiveAdmin::Pages
-  class PageSection < ActiveRecord::Base
+  class Section < ActiveRecord::Base
     attr_accessible :body, :position, :title
     set_table_name :active_admin_page_sections
 

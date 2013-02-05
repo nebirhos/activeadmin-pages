@@ -1,0 +1,10 @@
+<nav><%= raw page_menu_tree %></nav>
+
+<h1><%= @page.title %></h1>
+
+<% @page.sections.each do |section| %>
+<div>
+  <h2><%= section.title %></h2>
+  <p><%= section.body.html_safe %></p>
+</div>
+<% end %>

@@ -13,10 +13,6 @@ ActiveAdmin.register ActiveAdmin::Pages::Page, as: "Page" do
   filter :title
   filter :published
 
-  collection_action :suca, :method => :get do
-    binding.pry
-  end
-
   form do |f|
     f.inputs "Content" do
       f.translated_inputs "Content" do |t|
@@ -31,7 +27,7 @@ ActiveAdmin.register ActiveAdmin::Pages::Page, as: "Page" do
             end
           end
         end
-        t.seo_meta_inputs basic_metas: true, slug_url_prefix: f.object.url_prefix
+        t.seo_meta_inputs basic_metas: true, slug: true
       end
       f.input :published
     end
