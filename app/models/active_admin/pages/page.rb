@@ -1,7 +1,7 @@
 module ActiveAdmin::Pages
   class Page < ActiveRecord::Base
     attr_accessible :title, :published, :position, :layout
-    set_table_name "active_admin_pages"
+    self.table_name = "active_admin_pages"
 
     active_admin_translates :title do
       validates_presence_of :title
