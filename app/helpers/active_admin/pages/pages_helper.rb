@@ -17,7 +17,7 @@ module ActiveAdmin::Pages
           end
 
         end.join.html_safe
-      end
+      end unless pages.empty?
     end
 
   end
